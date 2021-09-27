@@ -51,7 +51,7 @@ const NewPlace = () => {
     
     formdata.append('place-image', formState.inputs.placeimage.value);
     try {
-      await sendRequest('https://placeoshare.herokuapp.com/api/places', 'POST', formdata, {
+      await sendRequest('http://localhost:5000/api/places', 'POST', formdata, {
         Authorization: 'Bearer ' + auth.token,
       });
       history.push('/'+auth.userId+'/places');

@@ -30,7 +30,7 @@ const Newpass = () => {
     event.preventDefault();
     try {
       const responseData = await sendRequest(
-        "https://placeoshare.herokuapp.com/api/users/new-password",
+        "http://localhost:5000/api/users/new-password",
         "POST",
         JSON.stringify({
           password: formState.inputs.password.value,

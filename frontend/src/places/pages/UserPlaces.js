@@ -18,7 +18,7 @@ const UserPlaces = () => {
     const fetchPlaces = async () => {
       try {
         const responseData = await sendRequest(
-          `https://placeoshare.herokuapp.com/api/places/user/${userId}`
+          `http://localhost:5000/api/places/user/${userId}`
         );
         setLoadedPlaces(responseData.places);
       } catch (err) {}
@@ -27,13 +27,13 @@ const UserPlaces = () => {
   }, [sendRequest, userId]);
 
   useEffect(() => {
-    const socket = openSocket("https://placeoshare.herokuapp.com", {
+    const socket = openSocket("http://localhost:5000", {
       transports: ["websocket"],
     });
 
     socket.on("places", async (data) => {
       const response = await fetch(
-        `https://placeoshare.herokuapp.com/api/places/user/${userId}`
+        `http://localhost:5000/api/places/user/${userId}`
       );
       const responseData = await response.json();
       if (responseData.places && responseData.places.length >= 0) {

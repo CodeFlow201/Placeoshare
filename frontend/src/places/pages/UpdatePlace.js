@@ -40,7 +40,7 @@ const UpdatePlace = () => {
     const fetchPlace = async () => {
       try {
         const responseData = await sendRequest(
-          `https://placeoshare.herokuapp.com/api/places/${placeId}`,
+          `http://localhost:5000/api/places/${placeId}`,
           'GET',
           null,
           {
@@ -71,7 +71,7 @@ const UpdatePlace = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        `https://placeoshare.herokuapp.com/api/places/${placeId}`,
+        `http://localhost:5000/api/places/${placeId}`,
         'PATCH',
         JSON.stringify({
           title: formState.inputs.title.value,
