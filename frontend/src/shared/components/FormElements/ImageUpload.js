@@ -14,14 +14,7 @@ const ImageUpload = (props) => {
     if (!file) {
       return;
     }
-    // const fileReader = new FileReader();
-    // fileReader.onload = () => {
-
-    //   setPreviewUrl(fileReader.result);
-    //   console.log(fileReader.result);
-
-    // };
-    // fileReader.readAsDataURL(file);
+    
     setPreviewUrl(URL.createObjectURL(file)); 
     URL.revokeObjectURL(previewUrl);
   }, [file]);

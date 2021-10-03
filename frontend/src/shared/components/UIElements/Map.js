@@ -24,7 +24,7 @@ const Mapw = (props) => {
         shouldFocus: true,
       });
     });
-  }, [center, zoom]);
+  }, [center, zoom,props.description]);
 
   return (
     <div
