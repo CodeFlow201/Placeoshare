@@ -44,7 +44,7 @@
 }
 
 .place-item__actions button,
-.place-item__actions a {
+.place-item__actions a,.place-item__actions span {
   margin: 0.5rem;
 }
 
@@ -52,7 +52,17 @@
   height: 15rem;
   width: 100%;
 }
-
+ .like_btn{
+  position:absolute;
+  bottom:-12%;
+ }
+ .like_btn:hover{
+   transform: scale(1.14);
+ }
+ .like_wrapper
+ {
+   position: relative;
+ }
 @media (min-width: 768px) {
   .place-item__image {
     height: 20rem;
