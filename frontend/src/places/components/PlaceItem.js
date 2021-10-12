@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react';
 
 import Card from '../../shared/components/UIElements/Card';
+import LIKE_SVG from "../../assets/heart-fill.svg"
+import LOVE_SVG from "../../assets/heart.svg"
 import Button from '../../shared/components/FormElements/Button';
 import Modal from '../../shared/components/UIElements/Modal';
 import Map from '../../shared/components/UIElements/Map';
@@ -42,6 +44,17 @@ const PlaceItem = props => {
       props.onDelete(props.id);
     } catch (err) {}
   };
+  
+  const handleLike=()=>{
+    // make API call to the backend
+  }
+  const handleMouseEnter=(e)=>{
+     e.target.src=LIKE_SVG;
+  }
+  const handleMouseLeave=(e)=>{
+    e.target.src=LOVE_SVG;
+  }
+
 
   return (
     <>
@@ -103,6 +116,17 @@ const PlaceItem = props => {
                 DELETE
               </Button>
             )}
+             
+            {auth.userId && (
+             <span className="like_wrapper">
+                <img src={LOVE_SVG} 
+                onMouseEnter={handleMouseEnter} 
+                onMouseLeave={handleMouseLeave} 
+                onClick={handleLike} 
+                className="like_btn"/>
+             </span>
+            )}
+
           </div>
         </Card>
       </li>
