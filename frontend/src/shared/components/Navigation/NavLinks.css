@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.padding{
+  margin-left: 2px;
+}
+
 .nav-links li {
   margin: 1rem;
 }
