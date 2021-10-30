@@ -1,6 +1,6 @@
 # 💻 Place-o-share :
 
-A web app where you can share different places all around the world.
+A web app where you can share different places all around the world. :sparkles:
 
 ## 📌 Description :
 
