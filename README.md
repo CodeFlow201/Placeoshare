@@ -1,13 +1,13 @@
-# 💻 Place-o-share
+# 💻 Place-o-share :
 
-A web app where you can share different places all around the world
+A web app where you can share different places all around the world.
 
-## 📌 Description
+## 📌 Description :
 
-Bored in lockdown? Want to see amazing places all around the world?
+Bored in lockdown? -_- <br> Want to see amazing places all around the world?
 Then here You can see..
 
-## 📌 Setup
+## 📌 Setup :
 
 ```bash
 npm install
@@ -16,7 +16,7 @@ npm start
 ```
 
 
-## 📌 Tech Stack Used
+## 📌 Tech Stack Used :
 
 <ul>
 <li>NodeJS - A JS Run Time Environment Used For Backend</li>
@@ -28,7 +28,7 @@ npm start
 <li>Socket.io - For Websockets(that connects frontend and backend via event based communication)</li>
 </ul>
 
-## 📌 Usage
+## 📌 Usage :
 
 ```
 # A web app where you can share different places all around the world
