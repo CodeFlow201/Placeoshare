@@ -4,7 +4,7 @@ A web app where you can share different places all around the world.
 
 ## 📌 Description :
 
-Bored in lockdown? -_- <br> Want to see amazing places all around the world?
+Bored in lockdown? -_- <br> Want to see some amazing places all around the world?
 Then here You can see..
 
 ## 📌 Setup :
