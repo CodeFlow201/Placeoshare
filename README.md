@@ -221,7 +221,7 @@ npm start
 
 ## Challenges faced
 
-While developing a developer will surely face many challenges, some of them that i faced were -
+We always think that the life of a Developer is very smooth. It is actually not that way. When we talk about the challenges faced by developers, it is a different story, some of them that i faced were -
 
 
 
